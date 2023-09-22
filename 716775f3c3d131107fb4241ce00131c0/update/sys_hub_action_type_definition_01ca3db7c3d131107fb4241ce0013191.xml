@@ -1,0 +1,2673 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Get geographic data from a public IP address.</description>
+        <ih_action>false</ih_action>
+        <internal_name>get_geographic_data_from_ip</internal_name>
+        <label_cache>[{"name":"{{action.ip_address}}","label":"action➛IP address","type":"action","ref":"","reference_display":"","base_type":"ip_address","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4e4c9849-b3f6-4fd5-8632-d7b40b15b7e0].response_body}}","label":"step➛Call IPInfo REST API➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[4e4c9849-b3f6-4fd5-8632-d7b40b15b7e0].status_code}}","label":"step➛Call IPInfo REST API➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[ed099dc3-8f5d-4f2f-8a9d-8f4effacfb24].hostname}}","label":"step➛Parse Returned Data➛hostname","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"dc24d231-d104-4088-ad4e-eb5dfb89b279"}},{"name":"{{step[ed099dc3-8f5d-4f2f-8a9d-8f4effacfb24].city}}","label":"step➛Parse Returned Data➛city","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"05f4667b-29fa-4624-a0ef-7663643a8326"}},{"name":"{{step[ed099dc3-8f5d-4f2f-8a9d-8f4effacfb24].region}}","label":"step➛Parse Returned Data➛region","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"db8699ec-db51-4917-87ae-027fdc9e1d44"}},{"name":"{{step[ed099dc3-8f5d-4f2f-8a9d-8f4effacfb24].country}}","label":"step➛Parse Returned Data➛country","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"2346e7ab-fde4-44f8-89c5-b05e7a51d28e"}},{"name":"{{step[ed099dc3-8f5d-4f2f-8a9d-8f4effacfb24].latitude}}","label":"step➛Parse Returned Data➛latitude","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"5ddf8eb6-056b-4ebb-948a-a86c4db529c5"}},{"name":"{{step[ed099dc3-8f5d-4f2f-8a9d-8f4effacfb24].longitude}}","label":"step➛Parse Returned Data➛longitude","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"fb53ba0c-42ee-49de-b4dc-c493af8688fc"}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Get Geographic Data from IP</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 12:08:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>01ca3db7c3d131107fb4241ce0013191</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Get Geographic Data from IP</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="IPInfo Spoke" source="x_896872_ipinfo_sp">716775f3c3d131107fb4241ce00131c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_01ca3db7c3d131107fb4241ce0013191</sys_update_name>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 14:12:45</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=01ca3db7c3d131107fb4241ce0013191"/>
+    <sys_variable_value action="delete_multiple" query="document_key=01ca3db7c3d131107fb4241ce0013191"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>01ca3db7c3d131107fb4241ce0013191</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 12:18:23</sys_created_on>
+        <sys_id>100df1fbc3d131107fb4241ce00131e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 12:18:23</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">9c0df1fbc3d131107fb4241ce00131c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>01ca3db7c3d131107fb4241ce0013191</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 12:18:23</sys_created_on>
+        <sys_id>d00df1fbc3d131107fb4241ce00131e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 12:18:23</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">580df1fbc3d131107fb4241ce00131bb</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=01ca3db7c3d131107fb4241ce0013191"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>city</field>
+        <id>01ca3db7c3d131107fb4241ce0013191</id>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:13:01</sys_created_on>
+        <sys_id>7489c23fc31531107fb4241ce0013190</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:13:01</sys_updated_on>
+        <table>var__m_sys_hub_action_output_01ca3db7c3d131107fb4241ce0013191</table>
+        <value>{{step[ed099dc3-8f5d-4f2f-8a9d-8f4effacfb24].city}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>country</field>
+        <id>01ca3db7c3d131107fb4241ce0013191</id>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:13:01</sys_created_on>
+        <sys_id>fc89c23fc31531107fb4241ce001318f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:13:01</sys_updated_on>
+        <table>var__m_sys_hub_action_output_01ca3db7c3d131107fb4241ce0013191</table>
+        <value>{{step[ed099dc3-8f5d-4f2f-8a9d-8f4effacfb24].country}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>hostname</field>
+        <id>01ca3db7c3d131107fb4241ce0013191</id>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:13:01</sys_created_on>
+        <sys_id>b089c23fc31531107fb4241ce0013190</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:13:01</sys_updated_on>
+        <table>var__m_sys_hub_action_output_01ca3db7c3d131107fb4241ce0013191</table>
+        <value>{{step[ed099dc3-8f5d-4f2f-8a9d-8f4effacfb24].hostname}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ip_address</field>
+        <id>01ca3db7c3d131107fb4241ce0013191</id>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:13:01</sys_created_on>
+        <sys_id>f889c23fc31531107fb4241ce0013190</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:13:01</sys_updated_on>
+        <table>var__m_sys_hub_action_output_01ca3db7c3d131107fb4241ce0013191</table>
+        <value>{{action.ip_address}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>latitude</field>
+        <id>01ca3db7c3d131107fb4241ce0013191</id>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:13:01</sys_created_on>
+        <sys_id>3889c23fc31531107fb4241ce0013190</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:13:01</sys_updated_on>
+        <table>var__m_sys_hub_action_output_01ca3db7c3d131107fb4241ce0013191</table>
+        <value>{{step[ed099dc3-8f5d-4f2f-8a9d-8f4effacfb24].latitude}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>longitude</field>
+        <id>01ca3db7c3d131107fb4241ce0013191</id>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:13:01</sys_created_on>
+        <sys_id>7089c23fc31531107fb4241ce0013191</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:13:01</sys_updated_on>
+        <table>var__m_sys_hub_action_output_01ca3db7c3d131107fb4241ce0013191</table>
+        <value>{{step[ed099dc3-8f5d-4f2f-8a9d-8f4effacfb24].longitude}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>region</field>
+        <id>01ca3db7c3d131107fb4241ce0013191</id>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:13:01</sys_created_on>
+        <sys_id>bc89c23fc31531107fb4241ce0013190</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:13:01</sys_updated_on>
+        <table>var__m_sys_hub_action_output_01ca3db7c3d131107fb4241ce0013191</table>
+        <value>{{step[ed099dc3-8f5d-4f2f-8a9d-8f4effacfb24].region}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>01ca3db7c3d131107fb4241ce0013191</id>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 12:18:23</sys_created_on>
+        <sys_id>9c0df1fbc3d131107fb4241ce00131e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 12:18:23</sys_updated_on>
+        <table>var__m_sys_hub_action_output_01ca3db7c3d131107fb4241ce0013191</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>01ca3db7c3d131107fb4241ce0013191</id>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 12:18:23</sys_created_on>
+        <sys_id>d80df1fbc3d131107fb4241ce00131e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 12:18:23</sys_updated_on>
+        <table>var__m_sys_hub_action_output_01ca3db7c3d131107fb4241ce0013191</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=01ca3db7c3d131107fb4241ce0013191^sys_idNOT IN6e884ebbc31531107fb4241ce00131f6,fe9cf9bbc3d131107fb4241ce0013109"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Geographic Data from IP">01ca3db7c3d131107fb4241ce0013191</action>
+        <cid>ed099dc3-8f5d-4f2f-8a9d-8f4effacfb24</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Parse Returned Data</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:08:47</sys_created_on>
+        <sys_id>6e884ebbc31531107fb4241ce00131f6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:08:47</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=6e884ebbc31531107fb4241ce00131f6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6e884ebbc31531107fb4241ce00131f6</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:08:48</sys_created_on>
+        <sys_id>76888ebbc31531107fb4241ce0013139</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:08:48</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6e884ebbc31531107fb4241ce00131f6</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:08:48</sys_created_on>
+        <sys_id>7e888ebbc31531107fb4241ce0013139</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:08:48</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+    // Only parse the response body if the status code is 200  
+      if (inputs.status_code == '200'){
+      
+            // Parse the response_body input variable and save parsed object as responseBody
+            var responseBody = JSON.parse(inputs.response_body);
+      
+            // Map the parsed responseBody values to output variables
+            outputs.hostname = responseBody.hostname;
+      outputs.city = responseBody.city;
+      outputs.region = responseBody.region;
+            outputs.country = responseBody.country;
+          
+            // split the returned location into separate latitude and longitude values
+            var locArray = responseBody.loc.split(",");
+            outputs.latitude = locArray[0];
+            outputs.longitude = locArray[1];
+      }
+})(inputs, outputs);</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=6e884ebbc31531107fb4241ce00131f6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>6e884ebbc31531107fb4241ce00131f6</id>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:08:48</sys_created_on>
+        <sys_id>3e888ebbc31531107fb4241ce0013138</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:08:48</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response_body</field>
+        <id>6e884ebbc31531107fb4241ce00131f6</id>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:08:48</sys_created_on>
+        <sys_id>3a888ebbc31531107fb4241ce001313a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:08:48</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_6e884ebbc31531107fb4241ce00131f6</table>
+        <value>{{step[4e4c9849-b3f6-4fd5-8632-d7b40b15b7e0].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>6e884ebbc31531107fb4241ce00131f6</id>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:08:48</sys_created_on>
+        <sys_id>f2888ebbc31531107fb4241ce0013139</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:08:48</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status_code</field>
+        <id>6e884ebbc31531107fb4241ce00131f6</id>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:08:48</sys_created_on>
+        <sys_id>fa888ebbc31531107fb4241ce001313a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:08:48</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_6e884ebbc31531107fb4241ce00131f6</table>
+        <value>{{step[4e4c9849-b3f6-4fd5-8632-d7b40b15b7e0].status_code}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_6e884ebbc31531107fb4241ce00131f6^id=6e884ebbc31531107fb4241ce00131f6"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=6e884ebbc31531107fb4241ce00131f6"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=6e884ebbc31531107fb4241ce00131f6^sys_idNOT IN2e884ebbc31531107fb4241ce00131fe,2e888ebbc31531107fb4241ce0013102"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response_body</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Parse Returned Data">6e884ebbc31531107fb4241ce00131f6</model>
+        <model_id>6e884ebbc31531107fb4241ce00131f6</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_6e884ebbc31531107fb4241ce00131f6</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:08:47</sys_created_on>
+        <sys_id>2e884ebbc31531107fb4241ce00131fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:08:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status_code</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Parse Returned Data">6e884ebbc31531107fb4241ce00131f6</model>
+        <model_id>6e884ebbc31531107fb4241ce00131f6</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_6e884ebbc31531107fb4241ce00131f6</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:08:47</sys_created_on>
+        <sys_id>2e888ebbc31531107fb4241ce0013102</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:08:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=6e884ebbc31531107fb4241ce00131f6^sys_idNOT IN3a888ebbc31531107fb4241ce001311a,72888ebbc31531107fb4241ce001311e,72888ebbc31531107fb4241ce001312e,ba888ebbc31531107fb4241ce0013131,ea888ebbc31531107fb4241ce0013105,fe888ebbc31531107fb4241ce0013116"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=db8699ec-db51-4917-87ae-027fdc9e1d44</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>region</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>region</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Parse Returned Data">6e884ebbc31531107fb4241ce00131f6</model>
+        <model_id>6e884ebbc31531107fb4241ce00131f6</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_6e884ebbc31531107fb4241ce00131f6</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:08:47</sys_created_on>
+        <sys_id>3a888ebbc31531107fb4241ce001311a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:08:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=2346e7ab-fde4-44f8-89c5-b05e7a51d28e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>country</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>country</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Parse Returned Data">6e884ebbc31531107fb4241ce00131f6</model>
+        <model_id>6e884ebbc31531107fb4241ce00131f6</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_6e884ebbc31531107fb4241ce00131f6</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:08:47</sys_created_on>
+        <sys_id>72888ebbc31531107fb4241ce001311e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:08:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=5ddf8eb6-056b-4ebb-948a-a86c4db529c5</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>latitude</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>latitude</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Parse Returned Data">6e884ebbc31531107fb4241ce00131f6</model>
+        <model_id>6e884ebbc31531107fb4241ce00131f6</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_6e884ebbc31531107fb4241ce00131f6</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:08:47</sys_created_on>
+        <sys_id>72888ebbc31531107fb4241ce001312e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:08:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=fb53ba0c-42ee-49de-b4dc-c493af8688fc</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>longitude</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>longitude</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Parse Returned Data">6e884ebbc31531107fb4241ce00131f6</model>
+        <model_id>6e884ebbc31531107fb4241ce00131f6</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_6e884ebbc31531107fb4241ce00131f6</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:08:47</sys_created_on>
+        <sys_id>ba888ebbc31531107fb4241ce0013131</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:08:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=dc24d231-d104-4088-ad4e-eb5dfb89b279</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>hostname</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>hostname</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Parse Returned Data">6e884ebbc31531107fb4241ce00131f6</model>
+        <model_id>6e884ebbc31531107fb4241ce00131f6</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_6e884ebbc31531107fb4241ce00131f6</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:08:47</sys_created_on>
+        <sys_id>ea888ebbc31531107fb4241ce0013105</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:08:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=05f4667b-29fa-4624-a0ef-7663643a8326</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>city</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>city</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Parse Returned Data">6e884ebbc31531107fb4241ce00131f6</model>
+        <model_id>6e884ebbc31531107fb4241ce00131f6</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_6e884ebbc31531107fb4241ce00131f6</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:08:47</sys_created_on>
+        <sys_id>fe888ebbc31531107fb4241ce0013116</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:08:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6e884ebbc31531107fb4241ce00131f6"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_6e884ebbc31531107fb4241ce00131f6^sys_idNOT IN32888ebbc31531107fb4241ce0013116,36888ebbc31531107fb4241ce0013134,7a888ebbc31531107fb4241ce0013119,b2888ebbc31531107fb4241ce001311d,fa888ebbc31531107fb4241ce0013120,fa888ebbc31531107fb4241ce0013130"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>hostname</element>
+        <help/>
+        <hint/>
+        <label>hostname</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_6e884ebbc31531107fb4241ce00131f6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:08:47</sys_created_on>
+        <sys_id>32888ebbc31531107fb4241ce0013116</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IPInfo Spoke" source="x_896872_ipinfo_sp">716775f3c3d131107fb4241ce00131c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:08:47</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>longitude</element>
+        <help/>
+        <hint/>
+        <label>longitude</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_6e884ebbc31531107fb4241ce00131f6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:08:47</sys_created_on>
+        <sys_id>36888ebbc31531107fb4241ce0013134</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IPInfo Spoke" source="x_896872_ipinfo_sp">716775f3c3d131107fb4241ce00131c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:08:47</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>city</element>
+        <help/>
+        <hint/>
+        <label>city</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_6e884ebbc31531107fb4241ce00131f6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:08:47</sys_created_on>
+        <sys_id>7a888ebbc31531107fb4241ce0013119</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IPInfo Spoke" source="x_896872_ipinfo_sp">716775f3c3d131107fb4241ce00131c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:08:47</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>region</element>
+        <help/>
+        <hint/>
+        <label>region</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_6e884ebbc31531107fb4241ce00131f6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:08:47</sys_created_on>
+        <sys_id>b2888ebbc31531107fb4241ce001311d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IPInfo Spoke" source="x_896872_ipinfo_sp">716775f3c3d131107fb4241ce00131c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:08:47</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>country</element>
+        <help/>
+        <hint/>
+        <label>country</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_6e884ebbc31531107fb4241ce00131f6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:08:47</sys_created_on>
+        <sys_id>fa888ebbc31531107fb4241ce0013120</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IPInfo Spoke" source="x_896872_ipinfo_sp">716775f3c3d131107fb4241ce00131c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:08:47</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>latitude</element>
+        <help/>
+        <hint/>
+        <label>latitude</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_6e884ebbc31531107fb4241ce00131f6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:08:47</sys_created_on>
+        <sys_id>fa888ebbc31531107fb4241ce0013130</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IPInfo Spoke" source="x_896872_ipinfo_sp">716775f3c3d131107fb4241ce00131c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:08:47</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Geographic Data from IP">01ca3db7c3d131107fb4241ce0013191</action>
+        <cid>4e4c9849-b3f6-4fd5-8632-d7b40b15b7e0</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Call IPInfo REST API</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 12:16:38</sys_created_on>
+        <sys_id>fe9cf9bbc3d131107fb4241ce0013109</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 14:12:44</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=fe9cf9bbc3d131107fb4241ce0013109"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>fe9cf9bbc3d131107fb4241ce0013109</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 12:16:38</sys_created_on>
+        <sys_id>329cf9bbc3d131107fb4241ce0013141</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 12:16:38</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>fe9cf9bbc3d131107fb4241ce0013109</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 12:16:38</sys_created_on>
+        <sys_id>369cf9bbc3d131107fb4241ce0013140</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 12:18:22</sys_updated_on>
+        <value/>
+        <variable display_value="Resource Path">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>fe9cf9bbc3d131107fb4241ce0013109</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 12:18:22</sys_created_on>
+        <sys_id>540df1fbc3d131107fb4241ce00131ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 12:18:22</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>fe9cf9bbc3d131107fb4241ce0013109</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 12:16:38</sys_created_on>
+        <sys_id>729cf9bbc3d131107fb4241ce0013140</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 12:16:38</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>fe9cf9bbc3d131107fb4241ce0013109</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 12:16:38</sys_created_on>
+        <sys_id>7e9cf9bbc3d131107fb4241ce001313f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 12:16:38</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Headers">15288f755bd24110ab933520b881c713</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>fe9cf9bbc3d131107fb4241ce0013109</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 12:16:38</sys_created_on>
+        <sys_id>7e9cf9bbc3d131107fb4241ce0013140</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 12:16:38</sys_updated_on>
+        <value>https://ipinfo.io</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>fe9cf9bbc3d131107fb4241ce0013109</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 12:18:22</sys_created_on>
+        <sys_id>900df1fbc3d131107fb4241ce00131ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 12:18:22</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>fe9cf9bbc3d131107fb4241ce0013109</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 12:16:38</sys_created_on>
+        <sys_id>ba9cf9bbc3d131107fb4241ce0013140</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 12:16:38</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>fe9cf9bbc3d131107fb4241ce0013109</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 14:12:44</sys_created_on>
+        <sys_id>e327d2bfc35531107fb4241ce001316c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 14:12:44</sys_updated_on>
+        <value>b40192b7c35531107fb4241ce0013146</value>
+        <variable display_value="Connection Alias">262882f03b23320057a4a2e334efc4f0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>fe9cf9bbc3d131107fb4241ce0013109</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 14:12:44</sys_created_on>
+        <sys_id>eb27d2bfc35531107fb4241ce001316b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 14:12:44</sys_updated_on>
+        <value>ef751ff07301330025d71afe2ff6a7f9</value>
+        <variable display_value="Retry Policy">37be397587c03300a8cc7d5e27cb0ba2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>fe9cf9bbc3d131107fb4241ce0013109</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 12:16:38</sys_created_on>
+        <sys_id>f29cf9bbc3d131107fb4241ce0013141</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 12:16:38</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>fe9cf9bbc3d131107fb4241ce0013109</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 12:16:38</sys_created_on>
+        <sys_id>f69cf9bbc3d131107fb4241ce0013140</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 14:12:44</sys_updated_on>
+        <value>use_connection_alias</value>
+        <variable display_value="Connection">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_fe9cf9bbc3d131107fb4241ce0013109^id=fe9cf9bbc3d131107fb4241ce0013109"/>
+    <sys_element_mapping action="delete_multiple" query="id=fe9cf9bbc3d131107fb4241ce0013109"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>fe9cf9bbc3d131107fb4241ce0013109</id>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 12:16:38</sys_created_on>
+        <sys_id>3a9cf9bbc3d131107fb4241ce001313f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 12:16:38</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>fe9cf9bbc3d131107fb4241ce0013109</id>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 12:16:38</sys_created_on>
+        <sys_id>769cf9bbc3d131107fb4241ce001313f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 12:16:38</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>fe9cf9bbc3d131107fb4241ce0013109</id>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 12:16:38</sys_created_on>
+        <sys_id>b29cf9bbc3d131107fb4241ce001313f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 12:16:38</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>fe9cf9bbc3d131107fb4241ce0013109</id>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 12:16:38</sys_created_on>
+        <sys_id>fe9cf9bbc3d131107fb4241ce001313e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 12:16:38</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>fe9cf9bbc3d131107fb4241ce0013109</id>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 14:12:44</sys_created_on>
+        <sys_id>e727d2bfc35531107fb4241ce001316b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 14:12:44</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_timeout</field>
+        <id>fe9cf9bbc3d131107fb4241ce0013109</id>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 12:16:38</sys_created_on>
+        <sys_id>fa9cf9bbc3d131107fb4241ce001313f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 12:16:38</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>fe9cf9bbc3d131107fb4241ce0013109</id>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 12:18:22</sys_created_on>
+        <sys_id>900df1fbc3d131107fb4241ce00131aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 12:18:22</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_headers</field>
+        <id>fe9cf9bbc3d131107fb4241ce0013109</id>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 12:16:38</sys_created_on>
+        <sys_id>b69cf9bbc3d131107fb4241ce001313e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 12:16:38</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_query_params</field>
+        <id>fe9cf9bbc3d131107fb4241ce0013109</id>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 12:16:38</sys_created_on>
+        <sys_id>7a9cf9bbc3d131107fb4241ce001313e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 12:16:38</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>fe9cf9bbc3d131107fb4241ce0013109</id>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 12:18:22</sys_created_on>
+        <sys_id>540df1fbc3d131107fb4241ce00131aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 12:18:22</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>fe9cf9bbc3d131107fb4241ce0013109</id>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 12:16:38</sys_created_on>
+        <sys_id>3e9cf9bbc3d131107fb4241ce001313e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 12:18:22</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{{action.ip_address}}/json</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>retry_policy</field>
+        <id>fe9cf9bbc3d131107fb4241ce0013109</id>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 14:12:44</sys_created_on>
+        <sys_id>2327d2bfc35531107fb4241ce001316b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 14:12:44</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=fe9cf9bbc3d131107fb4241ce0013109"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=fe9cf9bbc3d131107fb4241ce0013109^sys_idNOT INe327d2bfc35531107fb4241ce001315f"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="Call IPInfo REST API">fe9cf9bbc3d131107fb4241ce0013109</model>
+        <model_id>fe9cf9bbc3d131107fb4241ce0013109</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_fe9cf9bbc3d131107fb4241ce0013109</name>
+        <next_element/>
+        <order>8</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 14:12:44</sys_created_on>
+        <sys_id>e327d2bfc35531107fb4241ce001315f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 14:12:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=fe9cf9bbc3d131107fb4241ce0013109"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_fe9cf9bbc3d131107fb4241ce0013109^sys_idNOT IN6327d2bfc35531107fb4241ce0013163"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sn_auth_token</element>
+        <help/>
+        <hint/>
+        <label>Credential Value</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_fe9cf9bbc3d131107fb4241ce0013109</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 14:12:44</sys_created_on>
+        <sys_id>6327d2bfc35531107fb4241ce0013163</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IPInfo Spoke" source="x_896872_ipinfo_sp">716775f3c3d131107fb4241ce00131c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 14:12:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=01ca3db7c3d131107fb4241ce0013191^sys_idNOT IN2a9cf9bbc3d131107fb4241ce0013100"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=ip_address,uiTypeLabel=IP Address,uiUniqueId=e482974f-e80d-4547-bbe2-a13f9c24100d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>ip_address</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">ip_address</internal_type>
+        <label>IP address</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Get Geographic Data from IP">01ca3db7c3d131107fb4241ce0013191</model>
+        <model_id>01ca3db7c3d131107fb4241ce0013191</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_01ca3db7c3d131107fb4241ce0013191</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 12:16:38</sys_created_on>
+        <sys_id>2a9cf9bbc3d131107fb4241ce0013100</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 12:16:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2a9cf9bbc3d131107fb4241ce0013100"/>
+    <sys_hub_action_output action="delete_multiple" query="model=01ca3db7c3d131107fb4241ce0013191^sys_idNOT IN580df1fbc3d131107fb4241ce00131bb,6089c23fc31531107fb4241ce001316c,6089c23fc31531107fb4241ce0013170,6c89c23fc31531107fb4241ce001315c,7089c23fc31531107fb4241ce0013174,7089c23fc31531107fb4241ce0013178,7089c23fc31531107fb4241ce001317c,9c0df1fbc3d131107fb4241ce00131c0,e089c23fc31531107fb4241ce0013165"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=92caa856-f226-4e1b-b0c5-44556c181a46</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Get Geographic Data from IP">01ca3db7c3d131107fb4241ce0013191</model>
+        <model_id>01ca3db7c3d131107fb4241ce0013191</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_01ca3db7c3d131107fb4241ce0013191</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 12:18:22</sys_created_on>
+        <sys_id>580df1fbc3d131107fb4241ce00131bb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:13:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=580df1fbc3d131107fb4241ce00131bb"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=580df1fbc3d131107fb4241ce00131bb"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=49df0183-a0f2-4184-80bf-c0db13437006</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>city</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>City</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Geographic Data from IP">01ca3db7c3d131107fb4241ce0013191</model>
+        <model_id>01ca3db7c3d131107fb4241ce0013191</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_01ca3db7c3d131107fb4241ce0013191</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:13:01</sys_created_on>
+        <sys_id>6089c23fc31531107fb4241ce001316c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:13:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6089c23fc31531107fb4241ce001316c"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6089c23fc31531107fb4241ce001316c"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=178cdf34-0a4c-479a-a4be-c464037f3c2c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>region</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Region</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Geographic Data from IP">01ca3db7c3d131107fb4241ce0013191</model>
+        <model_id>01ca3db7c3d131107fb4241ce0013191</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_01ca3db7c3d131107fb4241ce0013191</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:13:01</sys_created_on>
+        <sys_id>6089c23fc31531107fb4241ce0013170</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:13:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6089c23fc31531107fb4241ce0013170"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6089c23fc31531107fb4241ce0013170"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=ip_address,uiTypeLabel=IP Address,uiUniqueId=7ea87dc1-94b7-4ec3-8534-05b6462c9a52</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>ip_address</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">ip_address</internal_type>
+        <label>IP address</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Get Geographic Data from IP">01ca3db7c3d131107fb4241ce0013191</model>
+        <model_id>01ca3db7c3d131107fb4241ce0013191</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_01ca3db7c3d131107fb4241ce0013191</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:13:01</sys_created_on>
+        <sys_id>6c89c23fc31531107fb4241ce001315c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:13:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6c89c23fc31531107fb4241ce001315c"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6c89c23fc31531107fb4241ce001315c"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=cb9c8ea5-6de4-4db1-ada7-2bbfc2cc866f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>country</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Country</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Geographic Data from IP">01ca3db7c3d131107fb4241ce0013191</model>
+        <model_id>01ca3db7c3d131107fb4241ce0013191</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_01ca3db7c3d131107fb4241ce0013191</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:13:01</sys_created_on>
+        <sys_id>7089c23fc31531107fb4241ce0013174</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:13:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7089c23fc31531107fb4241ce0013174"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7089c23fc31531107fb4241ce0013174"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=7eef0639-2984-46f1-9818-471e977246cf</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>latitude</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Latitude</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Geographic Data from IP">01ca3db7c3d131107fb4241ce0013191</model>
+        <model_id>01ca3db7c3d131107fb4241ce0013191</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_01ca3db7c3d131107fb4241ce0013191</name>
+        <next_element/>
+        <order>8</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:13:01</sys_created_on>
+        <sys_id>7089c23fc31531107fb4241ce0013178</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:13:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7089c23fc31531107fb4241ce0013178"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7089c23fc31531107fb4241ce0013178"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=9c1be4c8-8c07-4a67-a2d4-1600f2dc0d73</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>longitude</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Longitude</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Geographic Data from IP">01ca3db7c3d131107fb4241ce0013191</model>
+        <model_id>01ca3db7c3d131107fb4241ce0013191</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_01ca3db7c3d131107fb4241ce0013191</name>
+        <next_element/>
+        <order>9</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:13:01</sys_created_on>
+        <sys_id>7089c23fc31531107fb4241ce001317c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:13:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7089c23fc31531107fb4241ce001317c"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7089c23fc31531107fb4241ce001317c"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=ca34a231-dd1b-42a3-b844-06b683dbb040,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Get Geographic Data from IP">01ca3db7c3d131107fb4241ce0013191</model>
+        <model_id>01ca3db7c3d131107fb4241ce0013191</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_01ca3db7c3d131107fb4241ce0013191</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 12:18:22</sys_created_on>
+        <sys_id>9c0df1fbc3d131107fb4241ce00131c0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:13:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9c0df1fbc3d131107fb4241ce00131c0"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9c0df1fbc3d131107fb4241ce00131c0"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=5e4e4d96-a156-445d-b890-1616c068b83c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>hostname</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Hostname</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Geographic Data from IP">01ca3db7c3d131107fb4241ce0013191</model>
+        <model_id>01ca3db7c3d131107fb4241ce0013191</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_01ca3db7c3d131107fb4241ce0013191</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:13:01</sys_created_on>
+        <sys_id>e089c23fc31531107fb4241ce0013165</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:13:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e089c23fc31531107fb4241ce0013165"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e089c23fc31531107fb4241ce0013165"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=01ca3db7c3d131107fb4241ce0013191"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=01ca3db7c3d131107fb4241ce0013191^sys_idNOT IN369cf9bbc3d131107fb4241ce0013146"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Get Geographic Data from IP">01ca3db7c3d131107fb4241ce0013191</action_type_id>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 12:16:38</sys_created_on>
+        <sys_id>369cf9bbc3d131107fb4241ce0013146</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 12:16:38</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=369cf9bbc3d131107fb4241ce0013146"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_01ca3db7c3d131107fb4241ce0013191^sys_idNOT INf69cf9bbc3d131107fb4241ce0013107"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>ip_address</element>
+        <help/>
+        <hint>Find the physical location of this public IP address.</hint>
+        <label>IP address</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_01ca3db7c3d131107fb4241ce0013191</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 12:16:38</sys_created_on>
+        <sys_id>f69cf9bbc3d131107fb4241ce0013107</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IPInfo Spoke" source="x_896872_ipinfo_sp">716775f3c3d131107fb4241ce00131c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 12:16:38</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_01ca3db7c3d131107fb4241ce0013191"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_01ca3db7c3d131107fb4241ce0013191^sys_idNOT IN140df1fbc3d131107fb4241ce00131c6,2089c23fc31531107fb4241ce0013161,2489c23fc31531107fb4241ce0013168,a089c23fc31531107fb4241ce001316f,b089c23fc31531107fb4241ce0013173,b089c23fc31531107fb4241ce0013177,b089c23fc31531107fb4241ce001317b,b089c23fc31531107fb4241ce001317f,dc0df1fbc3d131107fb4241ce00131bf"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_01ca3db7c3d131107fb4241ce0013191</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 12:18:23</sys_created_on>
+        <sys_id>140df1fbc3d131107fb4241ce00131c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IPInfo Spoke" source="x_896872_ipinfo_sp">716775f3c3d131107fb4241ce00131c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 12:18:23</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>ip_address</element>
+        <help/>
+        <hint/>
+        <label>IP address</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_01ca3db7c3d131107fb4241ce0013191</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:13:01</sys_created_on>
+        <sys_id>2089c23fc31531107fb4241ce0013161</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IPInfo Spoke" source="x_896872_ipinfo_sp">716775f3c3d131107fb4241ce00131c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:13:01</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>hostname</element>
+        <help/>
+        <hint/>
+        <label>Hostname</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_01ca3db7c3d131107fb4241ce0013191</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:13:01</sys_created_on>
+        <sys_id>2489c23fc31531107fb4241ce0013168</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IPInfo Spoke" source="x_896872_ipinfo_sp">716775f3c3d131107fb4241ce00131c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:13:01</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>city</element>
+        <help/>
+        <hint/>
+        <label>City</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_01ca3db7c3d131107fb4241ce0013191</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:13:01</sys_created_on>
+        <sys_id>a089c23fc31531107fb4241ce001316f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IPInfo Spoke" source="x_896872_ipinfo_sp">716775f3c3d131107fb4241ce00131c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:13:01</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>region</element>
+        <help/>
+        <hint/>
+        <label>Region</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_01ca3db7c3d131107fb4241ce0013191</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:13:01</sys_created_on>
+        <sys_id>b089c23fc31531107fb4241ce0013173</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IPInfo Spoke" source="x_896872_ipinfo_sp">716775f3c3d131107fb4241ce00131c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:13:01</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>country</element>
+        <help/>
+        <hint/>
+        <label>Country</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_01ca3db7c3d131107fb4241ce0013191</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:13:01</sys_created_on>
+        <sys_id>b089c23fc31531107fb4241ce0013177</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IPInfo Spoke" source="x_896872_ipinfo_sp">716775f3c3d131107fb4241ce00131c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:13:01</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>latitude</element>
+        <help/>
+        <hint/>
+        <label>Latitude</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_01ca3db7c3d131107fb4241ce0013191</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:13:01</sys_created_on>
+        <sys_id>b089c23fc31531107fb4241ce001317b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IPInfo Spoke" source="x_896872_ipinfo_sp">716775f3c3d131107fb4241ce00131c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:13:01</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>longitude</element>
+        <help/>
+        <hint/>
+        <label>Longitude</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_01ca3db7c3d131107fb4241ce0013191</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 13:13:01</sys_created_on>
+        <sys_id>b089c23fc31531107fb4241ce001317f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IPInfo Spoke" source="x_896872_ipinfo_sp">716775f3c3d131107fb4241ce00131c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:13:01</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_01ca3db7c3d131107fb4241ce0013191</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Deepak.Kumar</sys_created_by>
+        <sys_created_on>2023-09-22 12:18:22</sys_created_on>
+        <sys_id>dc0df1fbc3d131107fb4241ce00131bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IPInfo Spoke" source="x_896872_ipinfo_sp">716775f3c3d131107fb4241ce00131c0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IPInfo Spoke">716775f3c3d131107fb4241ce00131c0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Deepak.Kumar</sys_updated_by>
+        <sys_updated_on>2023-09-22 12:18:22</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_01ca3db7c3d131107fb4241ce0013191"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=01ca3db7c3d131107fb4241ce0013191"/>
+</record_update>
